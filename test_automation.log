@@ -1,0 +1,11 @@
+2022-08-06 15:01:01,275 - support.logger - INFO - Started scenario: Sign In page can be opened from SignIn popup
+2022-08-06 15:02:05,092 - support.logger - INFO - Started scenario: Sign In page can be opened from SignIn popup
+2022-08-06 15:02:45,790 - support.logger - INFO - Started scenario: Sign In page can be opened from SignIn popup
+2022-08-06 15:05:20,915 - support.logger - INFO - Started scenario: Sign In page can be opened from SignIn popup
+2022-08-06 15:05:30,517 - support.logger - INFO - Searching by css selector '#nav-signin-tooltip .nav-action-inner'...
+2022-08-06 15:05:30,885 - support.logger - INFO - Found by css selector '#nav-signin-tooltip .nav-action-inner'
+2022-08-06 15:05:46,956 - support.logger - INFO - Started scenario: User is able to select New Arrivals
+2022-08-06 15:05:58,916 - support.logger - INFO - Searching by css selector 'a[href*='/New-Arrivals/']'...
+2022-08-06 15:05:59,094 - support.logger - INFO - Found by css selector 'a[href*='/New-Arrivals/']'
+2022-08-06 15:06:00,195 - support.logger - INFO - Searching by css selector 'img[src*='https://m.media-amazon.com/images/']'...
+2022-08-06 15:06:00,364 - support.logger - INFO - Found by css selector 'img[src*='https://m.media-amazon.com/images/']'

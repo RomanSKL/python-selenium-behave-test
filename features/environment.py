@@ -32,7 +32,7 @@ def browser_init(context, test_name):
 
     ### EventFiringWebDriver - log file ###
     ### for drivers ###
-    context.driver = EventFiringWebDriver(webdriver.Chrome(executable_path='/Users/skliarovrn/Desktop/automationRoman copy/python-selenium-automation test/chromedriver'), MyListener())
+    context.driver = EventFiringWebDriver(webdriver.Chrome(executable_path='/Users/skliarovrn/Desktop/GitHub repo/python-selenium-behave-test/chromedriver'), MyListener())
     # for headless mode ###
     # context.driver = EventFiringWebDriver(webdriver.Chrome(chrome_options = options), MyListener())
 
