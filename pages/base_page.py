@@ -26,8 +26,6 @@ class Page:
     def open_page(self, end_url=''):
         print(f'{self.base_url}{end_url}')
         self.driver.get(f'{self.base_url}{end_url}')
-     # def open_page(self, url):
-     #    self.driver.get(url)
 
     def wait_for_element_click(self, *locator):
         e = self.wait.until(EC.element_to_be_clickable(locator))
@@ -53,23 +51,3 @@ class Page:
 
 
 
-'''
-class Page:
-
-    def __init__(self, driver):
-        self.driver = driver
-
-    def click(self, *locator):
-        self.driver.find_element(*locator).click()
-
-    def open_page(self, url):
-        self.driver.get(url)
-
-    def input_text(self, text, *locator):
-        self.driver.find_element(*locator).send_keys(text)
-
-    def verify_text(self, expected_text, *locator):
-        actual_text = self.driver.find_element(*locator).text
-        assert expected_text == actual_text, \
-            f'Error! Actual text {actual_text} does not match expected {expected_text}'
- '''

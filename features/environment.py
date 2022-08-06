@@ -8,33 +8,24 @@ from selenium.webdriver.support.events import EventFiringWebDriver
 
 from support.logger import logger, MyListener
 
-# Register for BrowserStack, then grab it from https://www.browserstack.com/accounts/settings
 bs_user = 'romanskliarov_x8pMVg'
 bs_pw = 'vnf3qwxD7hzYzkdmzqtD'
 
-# Allure command:
-# behave -f allure_behave.formatter:AllureFormatter -o test_results/ features/tests/product_page.feature
-
 
 def browser_init(context, test_name):
-    """
-    :param context: Behave context
-    :param test_name: scenario.name
-    """
-    # context.driver = webdriver.Chrome(executable_path='/Users/skliarovrn/Desktop/automationRoman copy/python-selenium-automation test/chromedriver')
+
+    # context.driver = webdriver.Chrome(executable_path='/Users/skliarovrn/Desktop/GitHub repo/python-selenium-behave-test/chromedriver')
     # context.driver = webdriver.Firefox(executable_path='')
     # context.driver = webdriver.Safari()
 
     # HEADLESS MODE ####
     # options = webdriver.ChromeOptions()
     # options.add_argument('--headless')
-    # context.driver = webdriver.Chrome(chrome_options=options, executable_path='/Users/skliarovrn/Desktop/automationRoman/python-selenium-automation/chromedriver')
+    # context.driver = webdriver.Chrome(chrome_options=options, executable_path='/Users/skliarovrn/Desktop/GitHub repo/python-selenium-behave-test/chromedriver')
 
-    ### EventFiringWebDriver - log file ###
-    ### for drivers ###
+
     context.driver = EventFiringWebDriver(webdriver.Chrome(executable_path='/Users/skliarovrn/Desktop/GitHub repo/python-selenium-behave-test/chromedriver'), MyListener())
-    # for headless mode ###
-    # context.driver = EventFiringWebDriver(webdriver.Chrome(chrome_options = options), MyListener())
+    # context.driver = EventFiringWebDriver(webdriver.Chrome(chrome_options=options, executable_path='/Users/skliarovrn/Desktop/GitHub repo/python-selenium-behave-test/chromedriver'), MyListener())
 
     ### for browerstack ###
     # desired_cap = {

@@ -9,15 +9,12 @@ HEADER = (By.CSS_SELECTOR, '#zg_banner_text')
 
 @given('Open Best Sellers')
 def open_amazon_best_seller(context):
-    # context.driver.get('https://www.amazon.com/gp/bestsellers/?ref_=nav_cs_bestsellers')
     context.app.bestsellers_page.open_bestsellers()
 
 
 @then('Confirm {expected_amount} best sellers links')
 def verify_best_sellers_links_(context, expected_amount):
-    # best_sellers_links = context.driver.find_elements(*TOP_LINKS)
-    # assert len(best_sellers_links) == int(expected_amount), f'Expected {expected_amount} links, but got {len(best_sellers_links)}'
-    context.app.bestsellers_page.verify_links_preset(expected_amount)
+    context.app.bestsellers_page.verify_links_present(expected_amount)
 
 
 @then('User can click through top links and verify correct page opens')
