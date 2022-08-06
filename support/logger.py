@@ -22,3 +22,4 @@ class MyListener(AbstractEventListener):
 
     def on_exception(self, exception, driver):
         logger.error(exception)
+
